@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Security Logs</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<h2 style="text-align:center">📜 Security Logs</h2>
+
+<div class="log-box">
+  {% for log in logs %}
+    <div class="log-line">{{ log }}</div>
+  {% endfor %}
+</div>
+
+</body>
+</html>

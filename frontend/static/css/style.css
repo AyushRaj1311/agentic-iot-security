@@ -1,0 +1,54 @@
+body {
+  background: #0f172a;
+  color: white;
+  font-family: Arial;
+  margin: 0;
+}
+
+.navbar {
+  background: #020617;
+  padding: 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 12px;
+  font-size: 22px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px cyan;
+}
+.log-box {
+  background: #020617;
+  padding: 20px;
+  margin: 30px;
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.log-line {
+  font-family: monospace;
+  padding: 5px;
+  border-bottom: 1px solid #1e293b;
+}
+.alert {
+  animation: flash 1s infinite;
+}
+
+@keyframes flash {
+  0% { background: #7f1d1d; }
+  50% { background: #dc2626; }
+  100% { background: #7f1d1d; }
+}

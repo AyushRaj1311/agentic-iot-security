@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Agentic IoT Security</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="navbar">
+  <h1>🛡️ Agentic IoT Security</h1>
+</div>
+
+<div class="cards">
+  <div class="card" id="traffic">📡 Traffic: 0</div>
+  <div class="card" id="attacks">🚨 Attacks: 0</div>
+  <div class="card" id="blocked">🚫 Blocked IPs: 0</div>
+</div>
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+<div class="chart-container">
+  <canvas id="attackChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+</html>
